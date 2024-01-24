@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void serch()
+{
+	int i,flag=0,no,s,x[10];
+	clrscr();
+	printf("value of no:");
+	scanf("%d",&no);
+	for(i=0;i<no;i++)
+	{
+		printf("value of array:");
+		scanf("%d",&x[i]);
+	}
+	printf("serch no:");
+	scanf("%d",&s);
+	for(i=0;i<no-1;i++)
+	{
+		if(strcmp(x[i]==s)
+		{
+			flag=1;
+			break;
+		}
+	}
+	if(flag==1)
+	{
+		printf("found");
+	}
+	else
+	{
+		printf("not");
+	}
+
+	}
+
+
+void main()
+{
+	clrscr();
+	serch();
+	getch();
+}
+

@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void perfact(int no)
+{
+	int rem,sum=0,i;
+	clrscr();
+	for(i=1;i<=no-1;i++)
+	{
+		rem=no%i;
+		if(rem==0)
+		{
+			sum=sum+i;
+		}
+	}
+	if(sum==no)
+	{
+		printf("perfect");
+	}
+	else
+	{
+		printf("not");
+	}
+}
+void main()
+{
+	int no;
+	clrscr();
+	printf("enter no:");
+	scanf("%d",&no);
+	perfact(no);
+	getch();
+}

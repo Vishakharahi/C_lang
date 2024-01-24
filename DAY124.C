@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void lcm(int no1,int no2)
+{
+	int max_div,flag=1;
+	clrscr();
+	max_div=(no1>no2)?no1:no2;
+	while(flag)
+	{
+		if(max_div%no1==0&&max_div%no2==0)
+		{
+			printf("The LCM of %d and %d is %d.",no1,no2,max_div);
+			break;
+		}
+		max_div++;
+	}
+	getch();
+}
+void main()
+{
+	int no1,no2;
+	clrscr();
+	printf("enter value of no1:");
+	scanf("%d",&no1);
+	printf("value of no1:%d\n",no1);
+	printf("enter value of no2:");
+	scanf("%d",&no2);
+	printf("value of no2:%d\n",no2);
+	lcm(no1,no2);
+	getch();
+}

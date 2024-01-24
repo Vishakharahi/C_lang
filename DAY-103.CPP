@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	char s1[100];
+	char s2[100];
+	clrscr();
+	printf("enter value of s1:");
+	scanf("%s",&s1);
+	printf("entered value %s\n",s1);
+	printf("enter value of s2:");
+	scanf("%s",&s2);
+	printf("entered value %s\n",s2);
+	strcat(s1,s2);
+	printf("concatenated value: %s",s1);
+	getch();
+}
